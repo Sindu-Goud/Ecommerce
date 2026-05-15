@@ -80,7 +80,8 @@ WSGI_APPLICATION = 'Ecommerce.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.parse(
-        os.environ.get("DATABASE_URL")
+        os.environ.get("postgresql://neondb_owner:npg_OotN2uI8kvZn@ep-square-sky-aqg1vz9a-pooler.c-8.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require")
+        
     )
 }
 
